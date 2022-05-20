@@ -1,5 +1,5 @@
 {
-  "name": "@kasun/first-npm-pkg",
+  "name": "first-npm-pkg",
   "version": "1.0.0",
   "main": "index.js",
   "publishConfig": {
