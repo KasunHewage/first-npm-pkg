@@ -1,0 +1,11 @@
+{
+  "name": "@kasun/first-npm-pkg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@kasunhewage"
+  },
+  "repository": "https://github.com/KasunHewage/first-npm-pkg.git",
+  "author": "kasunkhe@gmail.com <kasunkhe@gmail.com>",
+  "license": "MIT"
+}
