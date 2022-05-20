@@ -1,5 +1,8 @@
 name: Publish Package to npmjs
 on:
+  push:
+    branches:
+      - "main"
   release:
     types: [created]
 jobs:
@@ -10,10 +13,10 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
           # Defaults to the user or organization that owns the workflow file
-          scope: '@kasunhewage'
+          scope: "@kasunhewage"
       - run: yarn
       - run: yarn publish
         env:
